@@ -111,7 +111,7 @@ if st.button("Run"):
         st.code(sql_query, language="sql")
 
         # Run SQL query
-        result, columns = read_sql_query(sql_query, "Naresh_it_employee1.db")
+        result, columns = read_sql_query(sql_query, "Company_Employees.db")
 
         # Show result
         if result and "SQL Error" in result[0]:
